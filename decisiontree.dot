@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="bangku <= 4.5\ngini = 0.482\nsamples = 32\nvalue = [19, 13]"] ;
+1 [label="penggerak <= 0.5\ngini = 0.305\nsamples = 16\nvalue = [3, 13]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="bangku <= 3.0\ngini = 0.231\nsamples = 15\nvalue = [2, 13]"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4]"] ;
+2 -> 3 ;
+4 [label="gini = 0.298\nsamples = 11\nvalue = [2, 9]"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 16\nvalue = [16, 0]"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
